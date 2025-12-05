@@ -1,0 +1,42 @@
+# ============ TORCH STACK (Install First) ============
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.4.1+cu121
+torchvision==0.19.1+cu121
+torchaudio==2.4.1+cu121
+
+# ============ CORE LIBRARIES ============
+numpy<2.0
+opencv-python>=4.10,<4.11
+pillow
+sounddevice
+filterpy>=1.4.5
+scipy
+safetensors
+
+# ============ MODEL PACKAGES ============
+ultralytics>=8.3.0
+coqui-tts
+openai-whisper
+transformers==4.55.1
+
+# ============ DA3 DEPENDENCIES ============
+einops
+omegaconf
+huggingface_hub
+imageio
+addict
+plyfile
+pillow_heif
+moviepy<2.0
+open3d
+pycolmap
+trimesh
+evo
+git+https://github.com/ultralytics/CLIP.git
+lapx
+pyttsx3
+pyrealsense2
+
+## Clone Depth Anything 3 Repository and Install
+#1. git clone https://github.com/ByteDance-Seed/Depth-Anything-3.git
+#2. pip install . --no-deps
